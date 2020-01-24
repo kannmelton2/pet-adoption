@@ -1,3 +1,120 @@
 body {
-    background-color: #333;
+    background-color: #DCDCDC;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    text-align: center;
+}
+
+/* BUTTONS AT TOP OF PAGE */
+button {
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px 5px 5px;
+  border: solid 1px transparent;
+  border-radius: 0.75em;
+  padding: .5em 5em;
+  color: #ffffff;
+  background-color: #9555af;
+}
+
+.btn.cat {
+    background-color: #5BC0DF;
+}
+
+.btn.dog {
+    background-color: #5BB85B
+}
+
+.btn.dino {
+   background-color: #F0AD4D;
+}
+
+.btn:hover {
+    border: solid 2px #808080;
+}
+
+/* FLEX CONTAINER */
+#pets-available {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* .PET-CARD FLEX ITEMS */
+.pet-card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c9c9c9;
+    width: 28%;
+    height: 35em;
+    margin: 10px;
+    border: 1px solid #808080;
+    border-radius: 1em;
+}
+
+/* HEADER WITHIN .PET-CARD */
+.pet-card header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A9A9A9;
+    height: 5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 1em 1em 0 0;
+}
+
+/* IMAGE */
+.pet-card img {
+    border: 1px solid #696969;
+    background-color: #A9A9A9;
+    margin: 1em .5em .5em .5em;
+    padding: .5em;
+    width: 20rem;
+    border-radius: 1em;
+}
+
+
+/* FOOTER */
+.pet-card footer {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 0 0 1em 1em;
+}
+
+
+.cat footer {
+    background-color: #5BC0DF;
+}
+
+.dog footer {
+    background-color: #5BB85B;
+}
+
+.dino footer {
+    background-color: #F0AD4D;
+}
+
+footer p {
+    font-weight: bold;
 }

@@ -241,3 +241,19 @@ const buildPetCards = (containerId, arr) => {
 };
 
 buildPetCards('pets-available', pets);
+
+// EVENT LISTENER - CLICK EVENT
+
+const buttonElement = document.getElementById('dogbtn');
+
+buttonElement.addEventListener('click', function (event) {
+    alert('Element clicked through function!');
+  });
+
+// above code works - can you put it in a function that will read 1 of 4 elements?
+// 1 - dogs only
+// 2 - cats only
+// 3 - dinos only
+// 4 - all, or return to original (default)
+// use a switch statment?? case of...? where are you getting the info? What is the input?
+//define element id variable in a function??

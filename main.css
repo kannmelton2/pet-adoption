@@ -8,12 +8,12 @@ body {
 
 /* BUTTONS AT TOP OF PAGE */
 button {
-        padding: 0;
-        border: none;
-        font: inherit;
-        color: inherit;
-        background-color: transparent;
-        cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .btn {
@@ -28,15 +28,15 @@ button {
   background-color: #9555af;
 }
 
-.btn.cat {
+.btn.catbtn {
     background-color: #5BC0DF;
 }
 
-.btn.dog {
+.btn.dogbtn {
     background-color: #5BB85B
 }
 
-.btn.dino {
+.btn.dinobtn {
    background-color: #F0AD4D;
 }
 
@@ -49,7 +49,7 @@ button {
     display: flex;
     width: 100%;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     text-align: center;
 }
@@ -63,7 +63,7 @@ button {
     background-color: #c9c9c9;
     width: 28%;
     height: 35em;
-    margin: 10px;
+    margin: 2%;
     border: 1px solid #808080;
     border-radius: 1em;
 }
@@ -81,7 +81,7 @@ button {
     border-radius: 1em 1em 0 0;
 }
 
-/* IMAGE */
+/* PET CARD IMAGES */
 .pet-card img {
     border: 1px solid #696969;
     background-color: #A9A9A9;
@@ -92,7 +92,7 @@ button {
 }
 
 
-/* FOOTER */
+/* PET CARD FOOTERS */
 .pet-card footer {
     display: flex;
     align-self: flex-end;

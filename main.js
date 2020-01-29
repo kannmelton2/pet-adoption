@@ -222,13 +222,7 @@ const pets = [
 const buildPetCards = (containerId, arr) => {
     let domStr = '';
     for (let i = 0; i < arr.length; i++){
-        if (arr[i].type === 'dog') {
-            domStr += '<div class="pet-card dog" id="Dogs">';
-        } else if (arr[i].type === 'cat') {
-                domStr += '<div class="pet-card cat" id="Cats">';
-        } else {
-            domStr += '<div class="pet-card dino" id="Dinos">';
-        }
+            domStr += `<div class="pet-card ${arr[i].type}">`;
             domStr +=   `<header><h3>${arr[i].name.toUpperCase()}</h3></header>`;
             domStr +=       `<img src=${arr[i].imageUrl}>`;
             domStr +=       `<p>${arr[i].color}</p>`;

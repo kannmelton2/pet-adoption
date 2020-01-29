@@ -223,11 +223,11 @@ const buildPetCards = (containerId, arr) => {
     let domStr = '';
     for (let i = 0; i < arr.length; i++){
         if (arr[i].type === 'dog') {
-            domStr += '<div class="pet-card dog">';
+            domStr += '<div class="pet-card dog" id="Dogs">';
         } else if (arr[i].type === 'cat') {
-                domStr += '<div class="pet-card cat">';
+                domStr += '<div class="pet-card cat" id="Cats">';
         } else {
-            domStr += '<div class="pet-card dino">';
+            domStr += '<div class="pet-card dino" id="Dinos">';
         }
             domStr +=   `<header><h3>${arr[i].name.toUpperCase()}</h3></header>`;
             domStr +=       `<img src=${arr[i].imageUrl}>`;
@@ -240,4 +240,34 @@ const buildPetCards = (containerId, arr) => {
 
 };
 
-buildPetCards('pets-available', pets);
+// FILTERING / CLICK EVENT / ADD EVENT LISTENER
+
+const filterPets = (e) => { // e = event (a js freebie... look it up)
+  const buttonId = e.target.id;
+  if (buttonId === 'all') {
+      buildPetCards('pets-available', pets);
+  } else {
+      const findPet = [];
+      for (let i = 0; i < pets.length; i++) {
+          if (pets[i].type === buttonId) {
+              findPet.push(pets[i]);
+       }
+      }
+      buildPetCards('pets-available', findPet);
+  }
+};
+
+const events = () => {
+document.getElementById('dog').addEventListener('click', filterPets);
+document.getElementById('cat').addEventListener('click', filterPets);
+document.getElementById('dino').addEventListener('click', filterPets);
+document.getElementById('all').addEventListener('click', filterPets);
+};
+
+// INITIALIZED ON PAGE LOAD
+const init = () => {
+  buildPetCards('pets-available', pets);
+  events();
+}
+
+init();

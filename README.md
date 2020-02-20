@@ -1,7 +1,7 @@
 # pet-adoption
 
 ## Description
-This project is an exploration of vanilla css focusing on flexbox. We wrote all code from scratch to achieve a uniform look for the cards on the page, which displays pets that are available for adoption. You can filter through these pets by using the buttons at the top of the page, which will give you only dogs, only cats, or only dinos according the choice you make.
+This project is an exploration of vanilla css focusing on flexbox and using the DOM to manipulate our html in order to dynamically create content on our page. We wrote all code from scratch to achieve a uniform look for the cards on the page, which displays pets that are available for adoption. You can filter through these pets by using the buttons at the top of the page, which will give you only dogs, only cats, or only dinos according the choice you make.
 
 ## Screenshots
 ![Main Screen](./screenshots/mainview-pet-adoption.png)
